@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teso Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="cafe.css">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <script src="jquery.min.js"></script>
+    <script src="cafe.js"></script>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <a href="#" class="logo"><i class="fas fa-pizza-slice"></i>Te<span>So</span> Cafe</a>
+
+      <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#review">Review</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fa fa-bars" id="menu-bars"></i>
+        <i class="fa fa-search" id="search-icon"></i>
+        <a href="#"><i class="fa fa-heart"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--search form-->
+    <form action="" class="search-form">
+      <input
+        type="search"
+        name=""
+        placeholder="search here.."
+        id="search-box"
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+    <!--search form end-->
+
+    <!--container-->
+
+    <section class="container">
+      <div class="left">
+        <div class="image"></div>
+      </div>
+
+      <div class="right">
+        <div class="content">
+          <h3>Te<span>So</span> Cafe</h3>
+          <br />
+          <p>
+            You better cut the pizza in four pieces because I'm not hungry
+            enough to eat six. The people who give you their food give you their
+            heart.
+          </p>
+          <br />
+          <div id="ord">
+            <a href="#" class="button">Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--container end-->
+
+    <!--menu-->
+
+    <section class="menu" id="menu">
+      <h2 class="heading">Popular <span>Menu</span> Items..</h2>
+
+      <div class="box-container">
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="start1.jpg" alt="" />
+          <h4>Chicken Seekh Kebab</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="rate">$10.99</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="start2.jpg" alt="" />
+          <h4>Chicken Nuggets</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="rate">$13.99</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="start3.jpg" alt="" />
+          <h4>Chicken Egg Roll</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="rate">$15.99</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="starters.jpg" alt="" />
+          <h4>Veg Soup</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="rate">$9.99</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="main.jpg" alt="" />
+          <h4>Honey Chicken</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="rate">$25.99</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="main1.jpg" alt="" />
+          <h4>King Burger</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="rate">$20.99</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="main3.jpg" alt="" />
+          <h4>Spicy Pasta</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="rate">$15.89</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="main2.jpg" alt="" />
+          <h4>Fried Chicken</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="rate">$18.70</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="des.jpg" alt="" />
+          <h4>Choco Ice Waffles</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="rate">$15.90</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="des2.jpg" alt="" />
+          <h4>Vennila Pudding</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="rate">$9.70</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="des4.jpg" alt="" />
+          <h4>Cappuchino</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="rate">5.99</span>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <img src="des3.jpg" alt="" />
+          <h4>Bubble Choco Cake</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="rate">$8.80</span>
+        </div>
+      </div>
+    </section>
+    <!--menu end-->
+
+    <!--order-->
+    <section class="order" id="order">
+      <h2 class="heading">Or<span>der</span> Now!..</h2>
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>Your Name</span><br>
+            <input
+              type="text"
+              class="detail" placeholder="enter your name"/>
+          </div>
+
+          <div class="input">
+            <span>Your Number</span><br>
+            <input
+              type="text"
+              class="detail"
+              placeholder="enter your number"/>
+          </div>
+
+          <div class="input">
+            <span>Your Order</span><br>
+            <input
+              type="text"
+              class="detail"
+              placeholder="enter food name"/>
+          </div>
+
+          <div class="input">
+            <span>Count</span><br>
+            <input
+              type="number"
+              class="detail"
+              placeholder="enter number"/>
+          </div>
+
+          <div class="input">
+            <span>Additional Food</span><br>
+            <input
+              type="text"
+              class="detail"
+              placeholder="enter additional foods"/>
+          </div>
+
+          <div class="input">
+            <span>Your Address</span><br>
+            <textarea
+              placeholder="type here"
+              class="detail"></textarea>
+          </div>
+
+          <div class="input">
+            <span>Date and Time</span><br>
+            <input
+              type="datetime-local"
+              class="detail"/>
+          </div>
+          <button class="place">Place Order</button>
+        </div>
+      </form>
+    </section>
+    <!--order end-->
+
+    <!--review-->
+
+         <section class="review" id="review">
+
+          <h2 class="heading">Custo<span>mer's</span> Review..</h2>
+
+          <div class="grid">
+             <div class="grid-item">
+              <div class="card">
+                <img src="people1.jpg" class="card-img"alt="">
+                <h3>Georage</h3>
+                <p>Really awesome foods and the serving is best. admosphere also great.</p>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <div class="card">
+                <img src="people2.jpg" class="card-img"alt="">
+                <h3>marina</h3>
+                <p>the atmosphere was very nice and I definitely liked that you have very modern style.</p>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <div class="card">
+                <img src="people3.jpg" style="width: 250px; height: 240px; margin-left: 25px;"  class="card-img"alt="">
+                <h3>Carrie</h3>
+                <p>I had a great time eating delicious food at your restaurant.</p>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <div class="card">
+                <img src="people4.jpg" class="card-img"alt="">
+                <h3>Daisy</h3>
+                <p>the staff was great. the receptionists were very helpful and answered all our questions.</p>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+           </div>
+        </section>
+    <!--review end-->
+
+    <!--about-->
+  <section class="about" id="about">
+    <h2 class="head">Ab<span>out</span> Us..</h2>
+       <div class="about-container">
+        <img src="bg.jpg" class="bg-img">
+        <div class="about-content">
+        <h4>Let food be thy medicine and medicine be thy food..</h4>
+        <p>Te<span>So</span> Cafe specializes in delicious food featuring fresh ingredients and
+           masterful preparation by the Te<span>So</span> Cafe culinary team. Whether you're 
+           ordering a multi-course meal or grabbing a drink and pizza at the bar,Te<span>So</span> Cafe lively, casual yet 
+          upscale atmosphere makes it perfect for dining with friends, family, clients and business associates  
+          fresh salads and juicy hamburgers made with fresh-ground beef.</p><br><br>
+          <a href="#" class="btn"> Read More!...</a>
+        </div>
+      </div>
+  </section>
+    <!--about us-->
+     <section class="footer" id="contact">
+
+      <div class="foot-container">
+
+        <div class="foot-box">
+          <h4>Te<span>So</span> Cafe</h4>
+          <a href="#">Blog</a>
+          <a href="#">signin</a>
+          <a href="#">faq's</a>
+          <a href="#">contact us</a>
+          <a href="#">affiliate</a>
+        </div>
+       
+      <div class="foot-box">
+        <h4>Locations</h4>
+        <a href="#">Chennai</a>
+        <a href="#">Madurai</a>
+        <a href="#">Coimbatore</a>
+        <a href="#">Trichi</a>
+        <a href="#">Dindigul</a>
+      </div>
+   
+      <div class="foot-box">
+        <h4>Quick Links</h4>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Order</a>
+        <a href="#">Review</a>
+        <a href="#">About</a>
+      </div>
+ 
+      <div class="foot-box">
+        <h4>Contact-Info</h4>
+        <a href="#">+193-234-576</a>
+        <a href="#">+984-405-304</a>
+        <a href="#">+894-455-344</a>
+        <a href="#">tesocafe@gmail.com</a>
+        <a href="#">chennai, india- 600007.</a>
+    </div>
+
+    <div class="foot-box">
+      <h4>follow us</h4>
+      <a href="#">facebook</a>
+      <a href="#">twitter</a>
+      <a href="#">instagram</a>
+      <a href="#">skype</a>
+      <a href="#">linkedin</a>
+  </div>
+</div>
+    <div class="credit">All @2023 copyright reserved. </div>
+     </section>
+  </body>
+</html>
